@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuerdo aleatorio</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>✨ Recuerdo Aleatorio ✨</h1>
+  <img id="random-img" src="" alt="Imagen aleatoria">
+
+  <script>
+    const images = [
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/223dfe34-6f43-4018-9754-b303d8df5720.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/46ba6ac5-10db-4a3c-a66a-01527be7f1f8.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/45f7f086-42c4-4813-ab9a-eb5b2c62298e.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/41265a33-c51d-4074-9eab-fd28a70e2b15.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/60767338-dad5-4f6a-8fee-fc3a8985e123.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/58c6ebba-b559-4cf6-9ce4-f22a63366b11.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/4b59a809-9218-4e8a-b319-d29f88e2a007.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/47768032-ab15-40c5-87af-10f6e573d1f6.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/72630bf9-d42b-4a16-a54d-602f55d018c0.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/6f322196-9390-4f14-8077-6df73c761196.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/60767338dad5-4f6a-8feefc3a8985e123.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/c3ee43c1-b939-4c95-bc6f-26cd897602b2.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/a829aa43-e344-48a8-9ef4-629702219a4f.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/a4afd861-896a-4673-93e0-dd8f2ad5fb87.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/a11e5aa8-8ed4-4136-9b91-c37288f988f4.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/YouTube_%20Post%20pato.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/Ora%20a%20Dios%20por%20tus%20decisiones_%20%23Jesusnuestroescudoprotector.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/ffa1f0e9-5ef9-4022-a988-5add148a02c7.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/f6532cad-5146-4226-a8e0-3c6f781483e0.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/eeef3b0a-026a-4060-8739-1a2f0019b6e0.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/ee97b620-4a7f-4d5c-95eb-7a4331d8719a.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/e3a309dd-4e18-45c9-884c-fb5698bce7ed.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/dff89b79-d975-4b67-b964-ea76ffdc4a40.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/ef95511-721c-46c1-977d-502755821e7a.jpeg',
+      'https://raw.githubusercontent.com/reneorantes10/Recuerdos/main/c8653a9e-e6cb-4a88-baef-74c9690f72fe.jpeg'
+    ];
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById('random-img').src = images[randomIndex];
+  </script>
+</body>
+</html>
